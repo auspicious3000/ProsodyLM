@@ -5,7 +5,6 @@ import numpy as np
 
 def replace_num_tokens(text):
     text = re.sub(r"<\|num_tk_\d+\|>", "@", text)
-    text = re.sub(r"<\|xtrm_tk_\d+\|>", "#", text)
     return text
 
 
@@ -106,15 +105,12 @@ class TemplateLogitsProcessor:
     def __init__(self,
                  template,
                  pattern,
-                 free_start_1, free_end_1,
-                 free_start_2, free_end_2):
+                 free_start_1, free_end_1):
         
         self.template = template
         self.pattern     = pattern
         self.free_start_1  = free_start_1
         self.free_end_1    = free_end_1
-        self.free_start_2  = free_start_2
-        self.free_end_2    = free_end_2
 
     def __call__(self,
                  past_ids,
@@ -130,11 +126,6 @@ class TemplateLogitsProcessor:
         if fixed_id is None:
             logits[:self.free_start_1]  = float('-inf')
             logits[self.free_end_1:]    = float('-inf')
-            return logits
-
-        if fixed_id == -1:
-            logits[:self.free_start_2]  = float('-inf')
-            logits[self.free_end_2:]    = float('-inf')
             return logits
 
         logits.fill_(float('-inf'))

@@ -18,13 +18,10 @@ def build_pattern(tokenizer,
     
     parts.append(f"{sil}{free_char}{sep}")
     template = ''.join(parts)
-    template = '###' + template
 
     pattern = []
     for part in re.split(r'([@#]+)', template):
-        if part.startswith('#'):
-            pattern += [-1] * len(part)
-        elif part.startswith('@'):
+        if part.startswith('@'):
             pattern += [None] * len(part)  
         elif part:                                           
             pattern += tokenizer.encode(part, add_special_tokens=False)
