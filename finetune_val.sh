@@ -7,7 +7,7 @@ mkdir -p $output_dir
 cp "$0" ${output_dir}/$(date +"%Y-%m-%d-%H-%M-%S").sh
 
 torchrun --nproc_per_node=1 --master_port=1688 ./finetune_val.py \
-    --base_model '../text2hpc/pretrained_models/Llama-3.1-8B-Instruct' \
+    --base_model 'Llama-3.1-8B-Instruct' \
     --data_path 'librilight_colm.jsonl' \
     --data_val_path 'none' \
     --output_dir $output_dir \

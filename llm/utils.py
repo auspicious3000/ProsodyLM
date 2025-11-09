@@ -72,7 +72,7 @@ def parse_prs_token_sequence(text):
             - The text does not end with [SEP_2]
     """
     # 1. Check the sentence starts correctly
-    if not re.match(r"^(<\|xtrm_tk_\d+\|>){3}<SIL>|^<SIL>", text):
+    if not re.match(r"^<SIL>", text):
         raise ValueError("Invalid sentence start format.")
 
     # 2. Check it ends with [SEP_2]
