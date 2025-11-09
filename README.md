@@ -68,7 +68,7 @@ finetune_val.sh
 A short clip generated from a model fine-tuned with **ProsodyLM** — showing expressive, natural speech synthesis.
 
 <p align="center">
-  <video src="24 IBM and US Open The future of tennis broadcasting LinkedIn.mp4" width="480" controls></video>
+  <video src="24%20IBM%20and%20US%20Open%20The%20future%20of%20tennis%20broadcasting%20LinkedIn.mp4" width="480" controls></video>
 </p>
 
 ---
