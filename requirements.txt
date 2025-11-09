@@ -1,0 +1,10 @@
+vllm==0.6.6.post1
+transformers==4.45.2
+phonemizer==3.3.0
+munch==4.0.0
+torch==2.5.1
+torchaudio==2.5.1
+fire==0.7.0
+wandb==0.18.3
+datasets==3.0.1
+peft==0.13.2
