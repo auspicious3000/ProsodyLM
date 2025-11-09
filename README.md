@@ -68,7 +68,7 @@ finetune_val.sh
 A short clip generated from a model fine-tuned with **ProsodyLM** — showing expressive, natural speech synthesis.
 
 <p align="center">
-  <video src="https://github.com/user-attachments/assets/62df197a-960f-4051-bb60-f34805aac23a" width="480" controls></video>
+  <video src="https://github.com/user-attachments/assets/62df197a-960f-4051-bb60-f34805aac23a" width="240" controls></video>
 </p>
 
 
