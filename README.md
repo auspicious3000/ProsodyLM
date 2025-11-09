@@ -68,7 +68,7 @@ finetune_val.sh
 A short clip generated from a model fine-tuned with **ProsodyLM** — showing expressive, natural speech synthesis.
 
 <p align="center">
-  <video src="https://raw.githubusercontent.com/auspicious3000/prosodylm/main/tennis_future_demo.mp4" width="480" controls></video>
+  <video src="tennis_future_demo.mp4" width="480" controls></video>
 </p>
 
 
