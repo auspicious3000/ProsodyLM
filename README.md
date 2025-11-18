@@ -2,7 +2,8 @@
 
 **ProsodyLM** — a speech language model  
 → With novel **prosody tokenization** (not audio tokenization)  
-→ Achieves superior prosody capabilities with **pre-training only** (no alignment)
+→ Achieves superior prosody capabilities with **pre-training only** (no alignment)  
+→ **Requires only a small amount of data (~30 k hours) instead of millions of hours used by other models**  
 
 ---
 
